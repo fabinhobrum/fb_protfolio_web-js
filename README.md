@@ -2,7 +2,7 @@
 Portfolio do desenvolvedor
 
 ## Icones
-📦 nova funcionalidade
+📦 nova funcionalidade 
 ⬆ atualização
 🐛 correção de bug
 🏁 release
