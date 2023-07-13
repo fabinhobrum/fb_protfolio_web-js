@@ -2,10 +2,10 @@
 Portfolio do desenvolvedor
 
 ## Icones
-:package: nova funcionalidade
-:up: atualização
-:beetle: correção de bug
-:chequered_flag: release
+📦 nova funcionalidade
+⬆ atualização
+🐛 correção de bug
+🏁 release
 
 ## Tarefas
 Criação da estrutura basica, index, pasta style e image
