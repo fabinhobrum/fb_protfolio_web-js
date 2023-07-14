@@ -301,5 +301,34 @@ header{
 }
 
 .conhecimento-header{
-    
+    display: flex;
+    align-items: center;
+}
+
+.conhecimento-header i{
+    font-size: 2.5rem;
+    color: #4b4b4b;
+    padding-right: 1rem;
+}
+
+.conhecimento-header h3{
+    font-family: var(--font-secundary);
+    font-size: 1.8rem;
+}
+
+.conhecimento-text{
+    font-family: var(--font-secundary);
+    margin-top: 1rem;
+}
+
+.conhecimento-img-wrapper{
+    grid-column: 7 / 11;
+    grid-row: 2 / 6;
+    width: 100%;
+}
+
+.conhecimento-img-wrapper img{
+    object-fit: cover; /*faz com que a imagem fique dentro do envelope (wrapper)*/
+    width: 100%;
+    opacity: 0.7;
 }
