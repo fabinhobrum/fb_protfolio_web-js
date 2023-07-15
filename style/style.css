@@ -11,6 +11,16 @@
     text-decoration: none; /*remover o sublinhado dos links*/
 }
 
+:root{
+    --font-primary: "Baloo Da 2", serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-action: "Muli", serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 /*CABEÇALHO*/
 
 body{
@@ -24,11 +34,7 @@ header{
     position: relative; /* para se usar um baner na posição absoluta precisamos informar que o header e relativo*/
 }
 
-:root{
-    --font-primary: "Baloo Da 2", serif;
-    --font-secundary: "Josefin Slab", serif;
-    --font-action: "Muli", serif;
-}
+
 
 .hamburguer{
     /*background-color: red;*/
@@ -190,7 +196,7 @@ header{
     top: 0;
     right: 0; /*alinha a direita*/
     right: -25rem;
-    
+    z-index: 99;
 }
 
 .show-menu .sidebar{
@@ -497,6 +503,87 @@ header{
     text-transform: uppercase;
     width: 85%;
     height: 2rem;
-    margin-top: 1rem;
-        
+    margin-top: 1rem;        
 }
+
+
+/*RODAPÉ*/
+
+footer{
+    width: 100%;
+    height: 8rem;
+    background-color: #dadada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 8%;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.footer-logo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-content{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content p{
+    font-family: var(--font-primary);
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.footer-social{
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer-social a{
+    height: 100%;
+    margin: 0 2rem;
+    color: #000000;
+    font-size: 2rem;
+       
+}
+
+.footer-social ul{
+    display: flex;
+}
+
+.footer-social a:hover{
+    color: #6a3093;
+}
+
+/*LINK TOPO*/
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: #642B73;
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);
+    background: linear-gradient(to right, #C6426E, #642B73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5rem;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #000000;
+}
+
