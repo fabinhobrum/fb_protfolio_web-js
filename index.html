@@ -161,24 +161,25 @@
                     <div class="contato-left"></div>
                     <div class="contato-right">
                         <h1>Contato</h1>
-                        <form action="">
+                        <form action="https://formsubmit.co/fabinhobrum@gmail.com" method="POST">
                             <div class="input-group">
-                                <input type="text" class="field" id="nome" required>
+                                <input type="text" name="name" class="field" id="nome" required>
                                 <label for="nome" class="field-label">Nome</label>
                             </div>
                             <div class="input-group">
-                                <input type="text" class="field" id="telefone" required>
+                                <input type="text" name="telefone" class="field" id="telefone" required>
                                 <label for="telefone" class="field-label">Telefone</label>
                             </div>
                             <div class="input-group">
-                                <input type="text" class="field" id="email" required>
+                                <input type="text" name="email" class="field" id="email" required>
                                 <label for="email" class="field-label">E-mail</label>
                             </div>
                             <div class="input-group">
-                                <textarea class="field" id="mensagem" required></textarea>
+                                <textarea class="field" name="message" id="mensagem" required></textarea>
                                 <label for="mensagem" class="field-label">Mensagem</label>
                             </div>
                             <button type="submit" class="btn btn-submit">Enviar</button>
+                            <input type="hidden" name="_captcha" value="false">
                         </form>
                     </div>
                 </div>
