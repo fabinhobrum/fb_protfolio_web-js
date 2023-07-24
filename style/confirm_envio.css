@@ -42,8 +42,8 @@ html{
 
 
     header{
-        width: 100%;
-        height: 14rem; /* dimensionar para que fique na altura da tela, independente do dispositivo*/
+        width: 100%h;
+        height: 16rem; /* dimensionar para que fique na altura da tela, independente do dispositivo*/
         overflow: hidden;
         position: relative; /* para se usar um baner na posição absoluta precisamos informar que o header e relativo*/
     }
@@ -64,7 +64,7 @@ html{
     
     .show-menu .hamburguer{
         position: absolute;
-        right: 15rem;
+        right: 17rem;
     }
 
     .line{
@@ -118,7 +118,7 @@ html{
     
     .img-wrapper{
         width: 100%;
-        height: 85%;
+        height: 100%;
         overflow: hidden; /* remove qualquer posibilidade de barra de rolagem horizontal*/
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -142,9 +142,11 @@ html{
 
 
     .banner{
+        width: 100%;
+        padding: 0;
         position: absolute;
-        top: 5%;
-        left: 5%;
+        top: 2.8rem;
+        left: .5rem;    
     }
 
     .banner h1{
@@ -192,7 +194,7 @@ html{
     .show-menu .sidebar{
         position: fixed;
         right: auto;
-        margin-left: 48.3rem; 
+        margin-left: 39.6rem; 
     }
     
     .menu{
@@ -249,6 +251,7 @@ html{
 
 
     .confirmacao-envio-header{
+        margin-top: 1rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
@@ -273,8 +276,8 @@ html{
         background-color: #dadada;
         display: flex;
         justify-content: center;
-        align-items: center;        
-    }
+        align-items: center;
+        }
 
     .footer-logo{
         width: 12rem;
@@ -286,10 +289,11 @@ html{
     .footer-logo img{
         object-fit: cover;
         width: 80%;
+        
     }
 
     .footer-content{
-        width: 100%;        
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -300,6 +304,7 @@ html{
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: center;
+        font-weight: bold;
     }
 
     .footer-copyright p{
@@ -308,10 +313,19 @@ html{
         font-size: 1rem;
     }
 
+    .footer-copyright a{
+        color: #252525;
+    }
+    
+    .footer-copyright a:hover{
+        color: #6a3093;
+    }
+    
     .footer-social{
         height: 7rem;
         display: flex;
         align-items: center;
+        
     }
 
     .footer-social a{
@@ -319,6 +333,7 @@ html{
         margin: 0 2rem;
         color: #000000;
         font-size: 2rem;
+        
     }
 
     .footer-social ul{
@@ -335,7 +350,7 @@ html{
         position: fixed;
         padding: .3rem;
         bottom: 1.5rem;        
-        margin-left: 66rem;
+        margin-left: 58rem;
         background: #642B73;
         background: -webkit-linear-gradient(to right, #C6426E, #642B73);
         background: linear-gradient(to right, #C6426E, #642B73);
@@ -366,28 +381,31 @@ html{
         position: relative;
     }
 
+
     header{
         width: 100%;
-        height: 12rem; /* dimensionar para que fique na altura da tela, independente do dispositivo*/
+        height: 14rem; /* dimensionar para que fique na altura da tela, independente do dispositivo*/
         overflow: hidden;
         position: relative; /* para se usar um baner na posição absoluta precisamos informar que o header e relativo*/
     }
 
     .hamburguer{
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
         position: fixed;
         z-index: 100; /* eixo x coloca o item a frente dos demais*/
-        right: 1rem;
+        right: auto;
+        transform: translateX(-3rem);       
         top: 1rem;
-        display: flex; /* habilitar as linhas do menu hamburquer*/
+        display: flex; /* habilitar as linhas do menu hamburquer*/        
         flex-direction: column; /*indica a direção das linhas do menu hamburquer*/
         justify-content: space-evenly; /*separa as linhas do menu hamburquer de forma que fiquem com mesmo espaçamento*/
         cursor: pointer;
     }
     
     .show-menu .hamburguer{
-        right: 16rem;
+        position: absolute;
+        right: 11.5rem;
     }
 
     .line{
@@ -399,7 +417,7 @@ html{
     }
 
     .show-menu #line1{
-        transform: rotate(45deg) translate(.1rem, .2rem); /*faz a rotação da linha e o posicionamento*/
+        transform: rotate(45deg) translate(.6rem); /*faz a rotação da linha e o posicionamento*/
     }
 
     .show-menu #line2{
@@ -408,9 +426,8 @@ html{
     }
 
     .show-menu #line3{
-        transform: rotate(-45deg) translate(.3rem, -.6rem);
+        transform: rotate(-45deg) translate(.3rem);
     }
-
     .hamburguer span{
         width: 6rem;
         height: 1.5rem;
@@ -441,7 +458,7 @@ html{
     
     .img-wrapper{
         width: 100%;
-        height: 85%;
+        height: 100%;
         overflow: hidden; /* remove qualquer posibilidade de barra de rolagem horizontal*/
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -463,15 +480,18 @@ html{
         }    
     }
 
+
     .banner{
+        width: 100%;
+        padding: 0;
         position: absolute;
-        top: 5%;
-        left: 5%;
+        top: 2.8rem;
+        left: .5rem;    
     }
 
     .banner h1{
         color: #ffffff;
-        font-size: 2.3rem;
+        font-size: 2rem;
         font-family: var(--font-primary);
         font-weight: 200; /* peso da fonte */
         text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.5);
@@ -483,7 +503,7 @@ html{
     .banner p{
         font-family: var(--font-secundary);
         color: #fff;
-        font-size: 2rem;
+        font-size: 1.9rem;
         text-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.4);
         margin-bottom: 1rem;
         opacity: 0;
@@ -501,18 +521,20 @@ html{
     }
 
     .sidebar{
-        width: 20rem;
+        width: 17rem;
         height: 80vh;
         background-color: #ffffff;
-        position: fixed;
-        top: 0;
-        right: 0; /*alinha a direita*/
-        right: -20rem;
+        position: absolute;
+        top: 0;        
+        right: -17rem;
         z-index: 99;
     }
+      
     
     .show-menu .sidebar{
-        right: 0;
+        position: fixed;
+        right: auto;
+        margin-left: 20.6rem; 
     }
     
     .menu{
@@ -567,14 +589,16 @@ html{
         height: 60%;        
     }
 
+
     .confirmacao-envio-header{
+        margin-top: 1rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
 
     .confirmacao-envio-header h1{
         font-family: var(--font-primary);
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         text-shadow: .1rem .1rem .2rem #0000008f;
     }
 
@@ -588,62 +612,80 @@ html{
 
     footer{
         width: 100%;
-        height: 10rem;
+        height: 16rem;
         background-color: #dadada;
-        display: flex;
-        justify-content: center;
-        align-items: center;        
-    }
-
-    .footer-logo{
-        width: 10rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        position: relative;
-    }
-
-    .footer-logo img{
-        object-fit: cover;
-        width: 80%;
-        
-    }
-
-    .footer-content{
-        width: 100%;        
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
+    .footer-logo{
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .footer-logo img{
+        object-fit: cover;
+        width: 5rem;
+        
+    }
+    
+    .footer-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
 
     .footer-copyright{
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: center;
+        font-weight: bold;
     }
 
     .footer-copyright p{
         font-family: var(--font-primary);
         color: #000000;        
-        font-size: .9rem;
+        font-size: 1rem;
+    }
+    
+    .footer-copyright a{
+        color: #252525;
     }
 
+    .footer-copyright a:hover{
+        color: #6a3093;
+    }
+    
     .footer-social{
-        height: 7rem;
+        height: 5rem;
         display: flex;
+        justify-content: center;
         align-items: center;
+        
     }
-
+    
     .footer-social a{
         height: 100%;
         margin: 0 2rem;
         color: #000000;
         font-size: 2rem;
+           
     }
-
+    
     .footer-social ul{
         display: flex;
     }
-
+    
     .footer-social a:hover{
         color: #6a3093;
     }
@@ -654,7 +696,7 @@ html{
         position: fixed;
         padding: .3rem;
         bottom: 1.5rem;        
-        right: 2rem;
+        margin-left: 33rem;
         background: #642B73;
         background: -webkit-linear-gradient(to right, #C6426E, #642B73);
         background: linear-gradient(to right, #C6426E, #642B73);
@@ -665,7 +707,6 @@ html{
         border-radius: .3rem;
         box-shadow: 0 0.1rem 0.6rem #000000;
         z-index: 101;
-        
     }
 }
 
@@ -685,8 +726,8 @@ html{
     }
 
     header{
-        width: 100vh;
-        height: 12rem; /* dimensionar para que fique na altura da tela, independente do dispositivo*/
+        width: 100%h;
+        height: 14rem; /* dimensionar para que fique na altura da tela, independente do dispositivo*/
         overflow: hidden;
         position: relative; /* para se usar um baner na posição absoluta precisamos informar que o header e relativo*/
     }
@@ -705,7 +746,7 @@ html{
     }
     
     .show-menu .hamburguer{
-        right: 11rem;
+        right: 11.5rem;
     }
 
     .line{
@@ -717,7 +758,7 @@ html{
     }
 
     .show-menu #line1{
-        transform: rotate(45deg) translate(.0rem, .2rem); /*faz a rotação da linha e o posicionamento*/
+        transform: rotate(45deg) translate(.6rem); /*faz a rotação da linha e o posicionamento*/
     }
 
     .show-menu #line2{
@@ -726,7 +767,7 @@ html{
     }
 
     .show-menu #line3{
-        transform: rotate(-45deg) translate(.1rem, -.65rem);
+        transform: rotate(-45deg) translate(.3rem);
     }
 
     .hamburguer span{
@@ -759,7 +800,7 @@ html{
     
     .img-wrapper{
         width: 100%;
-        height: 85%;
+        height: 100%;
         overflow: hidden; /* remove qualquer posibilidade de barra de rolagem horizontal*/
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -783,10 +824,11 @@ html{
 
 
     .banner{
+        width: 100%;
+        padding: 0;
         position: absolute;
-        top: 5%;
-        left: 5%;
-    
+        top: 2.8rem;
+        left: .5rem;    
     }
 
     .banner h1{
@@ -891,62 +933,66 @@ html{
 
 
     .confirmacao-envio-header{
-        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-left: .8rem;
         margin-bottom: 1rem;
         
     }
 
     .confirmacao-envio-header h1{
         font-family: var(--font-primary);
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-shadow: .1rem .1rem .2rem #0000008f;
     }
 
     .confirmacao-envio-header p {
         font-family: var(--font-secundary);
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         padding-top: 1rem;
     }
 
     /*RODAPÉ*/
 
     footer{
-        width: 100vh;
-        height: 8rem;
+        width: 100%;
+        height: 18rem;
         background-color: #dadada;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;        
-        }
-
+    }
+    
     .footer-logo{
-        width: 7rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        position: relative;
-    }
-
-    .footer-logo img{
-        object-fit: cover;
-        width: 80%;
-        
-    }
-
-    .footer-content{
-        width: 100%;        
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: .5rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
-
     
+    .footer-logo img{
+        object-fit: cover;
+        width: 5rem;
+        
+    }
+    
+    .footer-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+
     .footer-copyright{
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: center;
-        
-        
+        font-weight: bold;
     }
 
     .footer-copyright p{
@@ -954,29 +1000,39 @@ html{
         color: #000000;        
         font-size: 1rem;
     }
+    
+    .footer-copyright a{
+        color: #252525;
+    }
 
+    .footer-copyright a:hover{
+        color: #6a3093;
+    }
+    
     .footer-social{
-        height: 7rem;
+        height: 5rem;
         display: flex;
+        justify-content: center;
         align-items: center;
         
     }
-
+    
     .footer-social a{
         height: 100%;
         margin: 0 2rem;
         color: #000000;
         font-size: 2rem;
-        
+           
     }
-
+    
     .footer-social ul{
         display: flex;
     }
-
+    
     .footer-social a:hover{
         color: #6a3093;
     }
+    
 
     /*LINK TOPO*/    
 
@@ -984,7 +1040,7 @@ html{
             position: fixed;
             padding: .3rem;
             bottom: 1.5rem;        
-            right: 2rem;
+            right: 1rem;
             background: #642B73;
             background: -webkit-linear-gradient(to right, #C6426E, #642B73);
             background: linear-gradient(to right, #C6426E, #642B73);

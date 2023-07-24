@@ -30,11 +30,11 @@
     }
 
     .hamburguer{
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
         position: fixed;
         z-index: 100; /* eixo x coloca o item a frente dos demais*/
-        right: 1rem;
+        right: 2rem;
         top: 1rem;
         display: flex; /* habilitar as linhas do menu hamburquer*/
         flex-direction: column; /*indica a direção das linhas do menu hamburquer*/
@@ -43,7 +43,7 @@
     }
     
     .show-menu .hamburguer{
-        right: 16rem;
+        right: 14rem;
     }
 
     .line{
@@ -56,7 +56,7 @@
     }
 
     .show-menu #line1{
-        transform: rotate(45deg) translate(.1rem, .5rem); /*faz a rotação da linha e o posicionamento*/
+        transform: rotate(45deg) translate(.6rem); /*faz a rotação da linha e o posicionamento*/
     }
 
     .show-menu #line2{
@@ -65,7 +65,7 @@
     }
 
     .show-menu #line3{
-        transform: rotate(-45deg) translate(.1rem, -.7rem);
+        transform: rotate(-45deg) translate(.3rem);
     }
 
     .hamburguer span{
@@ -167,7 +167,14 @@
         animation: moveBanner 1s 0.9s forwards;  
     }
     
-    .banner button:hover{
+    .banner a{
+        font-family: var(--font-action);
+        color: #fff;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    .banner a:hover{
         color: rgb(24, 24, 24);
     }
 
@@ -182,13 +189,13 @@
     }
 
     .sidebar{
-        width: 20rem;
+        width: 17rem;
         height: 80vh;
         background-color: #ffffff;
         position: fixed;
         top: 0;
         right: 0; /*alinha a direita*/
-        right: -20rem;
+        right: -17rem;
         z-index: 99;
     }
     
@@ -552,14 +559,21 @@
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: center;
-        
-        
+        font-weight: bold;
     }
 
     .footer-copyright p{
         font-family: var(--font-primary);
         color: #000000;        
         font-size: 1rem;
+    }
+    
+    .footer-copyright a{
+        color: #252525;
+    }
+
+    .footer-copyright a:hover{
+        color: #6a3093;
     }
     
     .footer-social{

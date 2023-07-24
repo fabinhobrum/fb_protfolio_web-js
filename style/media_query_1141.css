@@ -60,7 +60,7 @@ html{
     
     .show-menu .hamburguer{
         position: absolute;
-        right: 15rem;
+        right: 16.5rem;
     }
 
     .line{
@@ -73,7 +73,7 @@ html{
     }
 
     .show-menu #line1{
-        transform: rotate(45deg) translate(.1rem, .5rem); /*faz a rotação da linha e o posicionamento*/
+        transform: rotate(45deg) translate(.75rem, .2rem); /*faz a rotação da linha e o posicionamento*/
     }
 
     .show-menu #line2{
@@ -82,7 +82,7 @@ html{
     }
 
     .show-menu #line3{
-        transform: rotate(-45deg) translate(.1rem, -.7rem);
+        transform: rotate(-45deg) translate(.3rem);
     }
 
     .hamburguer span{
@@ -570,8 +570,7 @@ html{
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: center;
-        
-        
+        font-weight: bold;
     }
 
     .footer-copyright p{
@@ -580,6 +579,14 @@ html{
         font-size: 1rem;
     }
 
+    .footer-copyright a{
+        color: #252525;
+    }
+    
+    .footer-copyright a:hover{
+        color: #6a3093;
+    }
+    
     .footer-social{
         height: 7rem;
         display: flex;
